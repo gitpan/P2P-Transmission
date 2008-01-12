@@ -25,7 +25,7 @@ scalar value on success or undef on failure.
 use Carp;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our $AUTOLOAD;
 our @SIMPLE  = qw/remove start stop/;
 our %TYPES   = (

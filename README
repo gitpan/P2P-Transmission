@@ -1,12 +1,12 @@
-P2P-Transmission version 0.01
+P2P-Transmission version 0.02
 =============================
 
-Checks a list of urls for specific return codes and then returns a 
-code / header / page of it's own.  This is useful for web server 
-clusters where you might have a switch or a web server performing 
-periodic health checks on an application.  This module allows you 
-to harness the checks of all the urls (web services) a specific 
-node might have in one easy to "check" URL.
+P2P::Transmission can be used to control the popular cross-platform
+Transmission BitTorrent client. The module supports both the common
+GUI-based client as well as the lesser-known transmission-daemon.
+
+Control of the client is achieved using a UNIX-socket provided by the
+client itself. The module supports the documented 1.00 command set.
 
 RESOURCES
 

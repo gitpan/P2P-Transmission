@@ -31,7 +31,7 @@ use IO::Socket::UNIX;
 use P2P::Transmission::Torrent;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our $AUTOLOAD;
 our @SIMPLE = qw/automap autostart directory downlimit
                  encryption pex port uplimit/;
@@ -334,7 +334,7 @@ This is a problem with the OSX IPC handler (see Transmission bug #600)
 
 =item B<NOTE>
 
-The 0.01 release of this module was only tested using the OSX version of
+The 0.02 release of this module was only tested using the OSX version of
 Transmission 1.00. Further testing against B<transmission-daemon> and the
 GTK version will be performed before the next module release.
 

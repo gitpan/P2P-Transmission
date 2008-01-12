@@ -1,0 +1,22 @@
+---
+name: P2P-Transmission
+version: 0.02
+author:
+  - Brandon Gilmore <brandon@mg2.org>
+abstract: Perl interface to the Transmission BitTorrent client
+license: perl
+resources:
+  license: http://dev.perl.org/licenses/
+requires:
+  Convert::Bencode: 1.03
+  IO::Socket::UNIX: 0
+build_requires:
+  Test::More: 0
+provides:
+  P2P::Transmission:
+    file: lib/P2P/Transmission.pm
+    version: 0.02
+  P2P::Transmission:Torrent:
+    file: lib/P2P/Transmission/Torrent.pm
+    version: 0.02
+generated_by: vim
