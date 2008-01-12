@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/P2P-Transmission.t
+lib/P2P/Transmission.pm
+lib/P2P/Transmission/Torrent.pm

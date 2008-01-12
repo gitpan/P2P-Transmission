@@ -1,0 +1,38 @@
+P2P-Transmission version 0.01
+=============================
+
+Checks a list of urls for specific return codes and then returns a 
+code / header / page of it's own.  This is useful for web server 
+clusters where you might have a switch or a web server performing 
+periodic health checks on an application.  This module allows you 
+to harness the checks of all the urls (web services) a specific 
+node might have in one easy to "check" URL.
+
+RESOURCES
+
+Trac/SVN Site:
+   http://svn.mg2.org/projects/brandon/browser/P2P::Transmission
+   
+INSTALLATION
+
+To install this module type the following:
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+Convert::Bencode
+IO::Socket::UNIX
+
+COPYRIGHT AND LICENSE
+
+Copyright (C) 2008 Brandon Gilmore <brandon@mg2.org>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.
+
