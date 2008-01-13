@@ -1,5 +1,8 @@
 Revision history for Perl extension P2P::Transmission.
 
+	0.04  Sun Jan 13 2008
+		- added POD docs for forgotten method (torrents())
+
 	0.03  Sat Jan 12 2008
 		- fixed a serious typo in META.yml
 

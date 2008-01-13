@@ -31,7 +31,7 @@ use IO::Socket::UNIX;
 use P2P::Transmission::Torrent;
 use strict;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 our $AUTOLOAD;
 our @SIMPLE = qw/automap autostart directory downlimit
                  encryption pex port uplimit/;
@@ -283,12 +283,12 @@ Get or set the state of encryption use. Valid parameters are:
 =item C<lookup()>
 
 Takes a sha1 hash argument and returns the corresponding
-C<P2P::Transmission::Torrent> object for the active torrent 
+L<P2P::Transmission::Torrent> object for the active torrent 
 identified by that hash. If none exists, C<undef> is returned
 
 =item C<pex(1|0)>
 
-Get or set the global preference to use peer exchange.
+Get or set the global preference to use peer exchange
 
 =item C<port()>
 
@@ -302,15 +302,20 @@ Instructs the Transmission program to quit
 
 =item C<start_all>
 
-Starts all inactive torrents
+Starts all paused torrents
 
 Returns C<1> for success or C<undef> for failure
 
 =item C<stop_all>
 
-Stops all active torrents
+Stops all running torrents
 
 Returns C<1> for success or C<undef> for failure
+
+=item C<torrents>
+
+Returns an array of L<P2P::Transmission::Torrent> objects for each
+of the currently active torrents 
 
 =item C<uplimit>
 
@@ -334,7 +339,7 @@ This is a problem with the OSX IPC handler (see Transmission bug #600)
 
 =item B<NOTE>
 
-The 0.03 release of this module was only tested using the OSX version of
+The 0.04 release of this module was only tested using the OSX version of
 Transmission 1.00. Further testing against B<transmission-daemon> and the
 GTK version will be performed before the next module release.
 
