@@ -1,5 +1,8 @@
 Revision history for Perl extension P2P::Transmission.
 
+	0.03  Sat Jan 12 2008
+		- fixed a serious typo in META.yml
+
 	0.02  Fri Jan 11 2008
 		- added META.yml file
 		- fixed README errors
