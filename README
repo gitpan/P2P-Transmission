@@ -1,12 +1,12 @@
-P2P-Transmission version 0.04
+P2P-Transmission version 0.05
 =============================
 
 P2P::Transmission can be used to control the popular cross-platform
 Transmission BitTorrent client. The module supports both the common
 GUI-based client as well as the lesser-known transmission-daemon.
 
-Control of the client is achieved using a UNIX-socket provided by the
-client itself. The module supports the documented 1.00 command set.
+Control of the client is achieved using an RPC interface provided by 
+the client itself. The module implements the documented 1.41 RPC spec.
 
 RESOURCES
 
@@ -25,8 +25,9 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-Convert::Bencode
-IO::Socket::UNIX
+JSON
+LWP::UserAgent
+MIME::Base64
 
 COPYRIGHT AND LICENSE
 

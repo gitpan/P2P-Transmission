@@ -1,5 +1,8 @@
 Revision history for Perl extension P2P::Transmission.
 
+	0.05  Mon Dec 22 2008
+		- heavy rewrite of 0.04 to support HTTP/RPC protocol
+
 	0.04  Sun Jan 13 2008
 		- added POD docs for forgotten method (torrents())
 
