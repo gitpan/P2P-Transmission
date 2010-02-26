@@ -1,5 +1,9 @@
 Revision history for Perl extension P2P::Transmission.
 
+	0.06  Fri Feb 26 2010
+		- fixed authentication system to respect Transmission's new HTTP realm string
+		- added support for the new X-Transmission-Session-Id security mechanism
+
 	0.05  Mon Dec 22 2008
 		- heavy rewrite of 0.04 to support HTTP/RPC protocol
 
